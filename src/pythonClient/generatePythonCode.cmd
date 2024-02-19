@@ -1,0 +1,1 @@
+python -m grpc_tools.protoc -I..\main\proto --python_out=. --grpc_python_out=. ..\main\proto\pingpong.proto

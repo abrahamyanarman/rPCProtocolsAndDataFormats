@@ -1,0 +1,9 @@
+{
+  "namespace": "test",
+  "type": "record",
+  "name": "message",
+  "fields": [
+    {"name": "content", "type": "string"},
+    {"name": "timestamp", "type": "long", "default": 0}// add for version to see version update in schema registry
+  ]
+}

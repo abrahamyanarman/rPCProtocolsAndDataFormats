@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package am.train.rpc.protocols.stubs;
+
+option java_package="am.train.rpc.protocols.stubs";
+option java_multiple_files = true;
+
+service PingPongService {
+  rpc SendPing (PingRequest) returns (PongResponse) {}
+}
+
+message PingRequest {
+  string message = 1;
+}
+
+message PongResponse {
+  string message = 1;
+}
